@@ -3,7 +3,7 @@ body {
 }
 
 .brand {
-    font-family: Lato, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     color: #4A4A4F;
@@ -88,7 +88,11 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #23BBBB;
+}
+
+.post-link h2 {
+    font-family: 'Abril Fatface', cursive;
 }
 
 .post-link:hover,
@@ -143,4 +147,8 @@ body {
 
 .navbar-nav.ms-auto.mb-2.mb-lg-0 li a {
     color: white !important;
+}
+
+.poppin-text {
+    font-family: 'Poppins', sans-serif;
 }
