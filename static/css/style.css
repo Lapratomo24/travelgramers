@@ -26,7 +26,7 @@ body {
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: hsl(24, 26%, 96%);
 }
 
 .card {
@@ -146,7 +146,7 @@ body {
 }
 
 .navbar-nav.ms-auto.mb-2.mb-lg-0 li a {
-    color: white !important;
+    color: #006ccd;
 }
 
 .poppin-text {
@@ -156,8 +156,8 @@ body {
 .parallax-header {
     background: #000;
     background: linear-gradient(
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.3)
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
     ), url("https://res.cloudinary.com/dbybmxt1u/image/upload/v1661175636/vienna_cizkr9.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -169,8 +169,26 @@ body {
     padding: 200px 0 200px 0;
 }
 
+.subtitle {
+    font-size: large;
+    line-height: 2.5;
+    color: hsl(24, 26%, 96%);
+}
+
+@media screen and (max-width: 800px) {
+    .minimize-tagline {
+        width: 90%;
+    }
+    .subtitle {
+        font-size: medium;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .minimize-tagline {
-        width: 80%;
+        width: 85%;
+    }
+    .subtitle {
+        font-size: small;
     }
 }
