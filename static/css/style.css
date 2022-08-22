@@ -152,3 +152,25 @@ body {
 .poppin-text {
     font-family: 'Poppins', sans-serif;
 }
+
+.parallax-header {
+    background: #000;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+    ), url("https://res.cloudinary.com/dbybmxt1u/image/upload/v1661175636/vienna_cizkr9.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-text {
+    padding: 200px 0 200px 0;
+}
+
+@media screen and (max-width: 600px) {
+    .minimize-tagline {
+        width: 80%;
+    }
+}
