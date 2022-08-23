@@ -3,12 +3,12 @@
 {% block content %}
 
 <div class="container-fluid">
-    <h1 class="page-title">Share your story here!</h1>
+    <h1 class="page-title row justify-content-center">Share your story here!</h1>
 </div>
 {% if user.is_authenticated %}
-<div class="row justify-content-center ">
-    <div class="col-md-4">
-        <form method="post" class="mb-5" enctype="multipart/form-data">
+<div class="row justify-content-center">
+    <div class="col-4">
+        <form method="post" enctype="multipart/form-data">
             {{ form | crispy }}
             {% csrf_token %}
             <button type="submit" class="btn btn-primary">Submit</button>

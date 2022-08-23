@@ -1,7 +1,8 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
-from django.views.generic import View, ListView
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic import View, ListView, CreateView
 from django.views.generic.edit import UpdateView, DeleteView
 from django.http import HttpResponseRedirect
 from .models import Post
@@ -92,7 +93,7 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-class CreatePost(SuccessMessageMixin, View):
+class CreatePost(SuccessMessageMixin, LoginRequiredMixin, CreateView):
     """
     Class to allow a logged-in user to add a new post
     """

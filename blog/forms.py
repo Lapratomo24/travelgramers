@@ -30,11 +30,11 @@ class ShareForm(forms.ModelForm):
         form page
         """
         model = Post
-        fields = {
+        fields = [
             "title",
             "featured_image",
             "status",
-        }
+        ]
 
         widgets = {
             "description": SummernoteWidget(),
