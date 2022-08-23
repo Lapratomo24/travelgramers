@@ -1,9 +1,11 @@
 from django.shortcuts import render, get_object_or_404, reverse
+from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic import View, ListView
 from django.views.generic.edit import UpdateView, DeleteView
 from django.http import HttpResponseRedirect
 from .models import Post
-from .forms import CommentForm
+from .forms import CommentForm, ShareForm
 
 # Create your views here.
 
@@ -41,7 +43,7 @@ class PostDetail(View):
                 "comment_form": CommentForm()
             }
         )
-    
+
 
     def post(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
@@ -50,7 +52,7 @@ class PostDetail(View):
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
-        
+
         comment_form = CommentForm(data=request.POST)
 
         if comment_form.is_valid():
@@ -84,7 +86,32 @@ class PostLike(View):
 
         if post.likes.filter(id=request.user.id).exists():
             post.likes.remove(request.user)
-        else: 
+        else:
             post.likes.add(request.user)
-        
+
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+class CreatePost(SuccessMessageMixin, View):
+    """
+    Class to allow a logged-in user to add a new post
+    """
+    form_class = ShareForm
+    template_name = 'create.html'
+    success_message = "%(calculated_field)s was created successfully"
+
+    def form_valid(self, form):
+        """
+        Method to set the logged-in user as the author of a new post
+        """
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+    def get_success_message(self, cleaned_data):
+        """
+        Message to indicate a successfully-created new post
+        """
+        return self.success_message % dict(
+            cleaned_data,
+            calculated_field=self.object.title,
+        )

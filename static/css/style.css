@@ -147,6 +147,7 @@ body {
 
 .navbar-nav.ms-auto.mb-2.mb-lg-0 li a {
     color: #006ccd;
+    margin-right: 20px;
 }
 
 .poppin-text {

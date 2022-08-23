@@ -16,11 +16,10 @@ class Post(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='blog_posts'
         )
-    updated_on = models.DateTimeField(auto_now=True)
     featured_image = CloudinaryField('image', default='placeholder')
-    description = models.TextField()
-    attractions = models.TextField()
-    duration = models.CharField(max_length=10, default=0)
+    updated_on = models.DateTimeField(auto_now=True)
+    description = models.TextField(blank=False)
+    attractions = models.TextField(blank=False)
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
