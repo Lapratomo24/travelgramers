@@ -2,8 +2,8 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.generic import View, ListView, CreateView
-from django.views.generic.edit import UpdateView, DeleteView
+from django.views.generic import View, ListView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm, ShareForm
@@ -82,7 +82,7 @@ class PostLike(View):
     """
     Class to give users the ability to like or unlike posts
     """
-    def post(self, request, slug):
+    def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
 
         if post.likes.filter(id=request.user.id).exists():
