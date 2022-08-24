@@ -116,3 +116,10 @@ class CreatePost(SuccessMessageMixin, LoginRequiredMixin, CreateView):
             cleaned_data,
             calculated_field=self.object.title,
         )
+
+
+def about(request):
+    """ 
+    Method to display about page 
+    """
+    return render(request, "about.html")
