@@ -34,6 +34,8 @@ class ShareForm(forms.ModelForm):
             "title",
             "featured_image",
             "status",
+            "description",
+            "attractions",
         ]
 
         widgets = {
