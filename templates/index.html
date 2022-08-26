@@ -5,7 +5,8 @@
 <div class="parallax-header">
     <div class="container">
         <div class="main-text">
-            <img class="d-block mx-auto minimize-tagline" width="600" src="https://res.cloudinary.com/dbybmxt1u/image/upload/v1661186502/site-logo_naalqt.png">
+            <img class="d-block mx-auto minimize-tagline" width="600"
+                src="https://res.cloudinary.com/dbybmxt1u/image/upload/v1661186502/site-logo_naalqt.png">
             <h3 class="text-center text-light poppin-text subtitle">Share Your Unique Travel Experience</h3>
         </div>
     </div>
@@ -19,18 +20,21 @@
             <div class="row">
                 {% for post in post_list %}
                 <div class="col-md-4">
-                    <div class="card mb-4">
+                    <div class="card mb-4 card-image">
                         <div class="card-body">
                             <div class="image-container">
-                                {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top"
-                                    src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
-                                {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
-                                {% endif %}
-                                <div class="image-flash">
-                                    <p class="author">Author: {{ post.author }}</p>
-                                </div>
+                                <a href="{% url 'post_detail' post.slug %}">
+                                    {% if "placeholder" in post.featured_image.url %}
+                                    <img class="card-img-top"
+                                        src="https://res.cloudinary.com/dbybmxt1u/image/upload/v1661534812/placeholder.jpg"
+                                        alt="placeholder">
+                                    {% else %}
+                                    <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                                    {% endif %}
+                                    <div class="image-flash">
+                                        <p class="author">Author: {{ post.author }}</p>
+                                    </div>
+                                </a>
                             </div>
                             <br>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">

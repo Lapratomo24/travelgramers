@@ -1,4 +1,4 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
 
 {% block title %}TravelGramers | {{ post.title }}{% endblock %}
 
@@ -17,8 +17,9 @@
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
-                {% if "placeholder" in post.featured_image.url %}
-                <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" width="100%">
+                {% if 'placeholder' in post.featured_image.url %}
+                <img src="https://res.cloudinary.com/dbybmxt1u/image/upload/v1661534812/placeholder.jpg"
+                    alt="placeholder" width="100&">
                 {% else %}
                 <img src=" {{ post.featured_image.url }}" width="100%">
                 {% endif %}
@@ -132,8 +133,10 @@
     </div>
     <div>
         {% if user.is_authenticated and post.author.id == user.id %}
-        <a role="button" type="submit" class="btn btn-signup btn-lg" href="{% url 'update' post.slug %}" style="margin: 0.75em">Update</a>
-        <a role="button" type="submit" class="btn btn-danger btn-lg" href="{% url 'delete' post.slug %}" style="margin: 0.75em 0 0.75em 0">Delete</a>
+        <a role="button" type="submit" class="btn btn-signup btn-lg" href="{% url 'update' post.slug %}"
+            style="margin: 0.75em">Update</a>
+        <a role="button" type="submit" class="btn btn-danger btn-lg" href="{% url 'delete' post.slug %}"
+            style="margin: 0.75em 0 0.75em 0">Delete</a>
         {% endif %}
     </div>
 </div>

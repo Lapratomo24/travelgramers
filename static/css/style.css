@@ -34,6 +34,12 @@ body {
     background-color: transparent;
 }
 
+.card-image {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid #999999;
+    background-color: transparent;
+}
+
 .image-container {
     position: relative;
 }
@@ -95,9 +101,8 @@ body {
     font-family: 'Abril Fatface', cursive;
 }
 
-.post-link:hover,
-.page-link {
-    color: #E84610;
+.post-link:hover {
+    color: #f68712;
 }
 
 .post-title {
@@ -108,6 +113,17 @@ body {
 .post-subtitle {
     margin-left: 5%;
     color: lightgray;
+}
+
+.page-link {
+    color: #006ccd;
+    border: 1px solid #006ccd;
+    background-color: #f8f9fa;
+}
+
+.page-link:hover {
+    color: #fff;
+    background-color: #23BBBB;
 }
 
 .btn-signup {
