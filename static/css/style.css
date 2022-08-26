@@ -88,14 +88,15 @@ body {
 
 .post-link {
     text-decoration: none;
+}
+
+.post-link h2,
+.page-title {
+    font-family: 'Abril Fatface', cursive;
     color: #23BBBB;
 }
 
-.post-link h2 {
-    font-family: 'Abril Fatface', cursive;
-}
-
-.post-link:hover {
+.post-link h2:hover {
     color: #f68712;
 }
 
@@ -109,25 +110,14 @@ body {
     color: lightgray;
 }
 
-.page-link {
-    color: #006ccd;
-    border: 1px solid #006ccd;
-    background-color: #f8f9fa;
-}
-
-.page-link:hover {
-    color: #fff;
-    background-color: #23BBBB;
-}
-
 .btn-signup {
-    background-color: #23BBBB;
-    color: #fff;
+    border: 1px solid #23BBBB;
+    color: #23bbbb;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #21abab;
+    background-color: #23bbbb;
     color: #fff;
 }
 
@@ -194,8 +184,8 @@ a.nav-link.active {
     color: hsl(24, 26%, 96%);
 }
 
-.form-shape label {
-    color: #006ccd;
+.form-title label {
+    color: #23BBBB;
     margin: 10px 0 2px 0;
 }
 
