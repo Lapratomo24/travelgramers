@@ -53,37 +53,12 @@ body {
 }
 
 .masthead {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 33vh;
-    width: 100%;
+    margin-top: 20px;
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: #006ccd;
     color: white;
-    position: relative;
-}
-
-.masthead-image {
-    position: relative;
-    overflow: hidden;
-}
-
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
 }
 
 .post-link {
@@ -196,6 +171,12 @@ a.nav-link.active {
     .subtitle {
         font-size: medium;
     }
+    .masthead-text h1 {
+        font-size: 1.6em;
+    }
+    .masthead-text p {
+        font-size: 0.8em;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -204,5 +185,11 @@ a.nav-link.active {
     }
     .subtitle {
         font-size: small;
+    }
+    .masthead-text h1 {
+        font-size: 1.2em;
+    }
+    .masthead-text p {
+        font-size: 0.6em;
     }
 }

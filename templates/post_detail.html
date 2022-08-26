@@ -9,19 +9,19 @@
 <div class="masthead">
     <div class="container">
         <div class="row g-0">
-            <div class="col-md-6 masthead-text">
+            <div class="col-8 masthead-text">
                 <!-- Post title goes in these h1 tags -->
                 <h1 class="post-title">{{ post.title }}</h1>
                 <!-- Post author goes before the | the post's created date goes after -->
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
             </div>
-            <div class="d-none d-md-block col-md-6 masthead-image">
+            <div class="d-md-block col-4 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
                 {% if 'placeholder' in post.featured_image.url %}
                 <img src="https://res.cloudinary.com/dbybmxt1u/image/upload/v1661534812/placeholder.jpg"
-                    alt="placeholder" width="100&">
+                    alt="placeholder" width="100%">
                 {% else %}
-                <img src=" {{ post.featured_image.url }}" width="100%">
+                <img src="{{ post.featured_image.url }}" width="100%">
                 {% endif %}
             </div>
         </div>
@@ -29,8 +29,10 @@
 </div>
 <div class="mx-auto mt-3" style="width: 200px;">
     {% if user.is_authenticated and post.author.id == user.id %}
-    <a role="button" type="submit" class="btn btn-signup btn-lg ms-3" style="font-size: small;" href="{% url 'update' post.slug %}">Update</a>
-    <a role="button" type="submit" class="btn btn-danger btn-lg ms-3" style="font-size: small;" href="{% url 'delete' post.slug %}">Delete</a>
+    <a role="button" type="submit" class="btn btn-signup btn-lg ms-3" style="font-size: small;"
+        href="{% url 'update' post.slug %}">Update</a>
+    <a role="button" type="submit" class="btn btn-danger btn-lg ms-3" style="font-size: small;"
+        href="{% url 'delete' post.slug %}">Delete</a>
     {% endif %}
 </div>
 <div class="container">
