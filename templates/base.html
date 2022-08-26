@@ -34,7 +34,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light border border-bottom" style="background-color: hsl(24, 26%, 96%);">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}">
+            <a href="{% url 'home' %}">
                 <img src="https://res.cloudinary.com/dbybmxt1u/image/upload/v1661186502/site-logo_naalqt.png"
                     alt="site-logo" width="220" height="auto" class="d-inline-block align-text-middle">
             </a>
@@ -46,7 +46,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 poppin-text">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == '/' %} active {% endif %}" aria-current="page"
                             href="{% url 'home' %}">Home</a>
@@ -100,7 +100,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 poppin-text" style="background-color: #006ccd;">
+    <footer class="footer mt-auto py-3" style="background-color: #006ccd;">
         <p class="m-0 text-center text-white" style="padding: 0.5em;">Copyright © 2022 Travelgramers.</p>
         <p class="m-0 text-center text-white" style="padding: 0.5em;">Instagram<a href="https://www.instagram.com"
                 target="_blank" rel="noopener" aria-label="Instagram"><i
