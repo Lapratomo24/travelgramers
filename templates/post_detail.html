@@ -27,7 +27,12 @@
         </div>
     </div>
 </div>
-
+<div class="mx-auto mt-3" style="width: 200px;">
+    {% if user.is_authenticated and post.author.id == user.id %}
+    <a role="button" type="submit" class="btn btn-signup btn-lg" href="{% url 'update' post.slug %}">Update</a>
+    <a role="button" type="submit" class="btn btn-danger btn-lg" href="{% url 'delete' post.slug %}">Delete</a>
+    {% endif %}
+</div>
 <div class="container">
     <div class="row">
         <div class="col card mb-4 mt-3 left top">
@@ -130,14 +135,6 @@
                 {% endif %}
             </div>
         </div>
-    </div>
-    <div>
-        {% if user.is_authenticated and post.author.id == user.id %}
-        <a role="button" type="submit" class="btn btn-signup btn-lg" href="{% url 'update' post.slug %}"
-            style="margin: 0.75em">Update</a>
-        <a role="button" type="submit" class="btn btn-danger btn-lg" href="{% url 'delete' post.slug %}"
-            style="margin: 0.75em 0 0.75em 0">Delete</a>
-        {% endif %}
     </div>
 </div>
 
