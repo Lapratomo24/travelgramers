@@ -11,9 +11,8 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8 mt-5 offset-md-2">
-      <h3>{% trans "Sign In" %}</h3>
-      <p>{% blocktrans %}<a class="link" href="{{ signup_url }}">Sign up</a> , and start sharing your unique travel experience with
-        others!{% endblocktrans %}</p>
+      <h2 class="page-title mb-3">{% trans "Welcome Back!" %}</h2>
+      <p>Start sharing your unique travel experience with others!</p>
     </div>
   </div>
   <div class="row">
@@ -24,8 +23,10 @@
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-        <a class="button secondaryAction link" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+        <a class="button secondaryAction link"
+          href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
         <button class="btn btn-signup" type="submit">{% trans "Sign In" %}</button>
+        <p class="mt-3">Or click {% blocktrans %}<a class="link" href="{{ signup_url }}">here</a> to create an account.{% endblocktrans %}</p>
       </form>
     </div>
   </div>
