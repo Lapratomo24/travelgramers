@@ -150,6 +150,14 @@ body {
     margin-right: 20px;
 }
 
+a.nav-link.active {
+    color: #f69712 !important;
+}
+
+.navbar-nav.ms-auto.mb-2.mb-lg-0 li a:hover {
+    color: #0088ff;
+}
+
 .poppin-text {
     font-family: 'Poppins', sans-serif;
 }

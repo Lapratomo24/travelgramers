@@ -40,25 +40,30 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 poppin-text">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                        <a class="nav-link {% if request.path == '/' %} active {% endif %}" aria-current="page"
+                            href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                        <a class="nav-link {% if '/about/' in request.path %} active {% endif %}"
+                            href="{% url 'about' %}">About</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'create' %}">Create</a>
+                        <a class="nav-link {% if '/create/' in request.path %} active {% endif %}"
+                            href="{% url 'create' %}">Create</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                        <a class="nav-link {% if '/logout/' in request.path %} active {% endif %}"
+                            href="{% url 'account_logout' %}">Logout</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                        <a class="nav-link {% if '/login/' in request.path %} active {% endif %}"
+                            href="{% url 'account_login' %}">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-primary" style="color: hsl(24, 26%, 96%)" !important
-                            href="{% url 'account_signup' %}">Register</a>
+                        <a class="nav-link btn btn-primary"
+                            style="color: hsl(24, 26%, 96%)" !important href="{% url 'account_signup' %}">Register</a>
                     </li>
                     {% endif %}
                 </ul>
