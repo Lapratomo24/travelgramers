@@ -4,18 +4,26 @@
 <html class="h-100">
 
 <head>
-    <title>Travelgramers</title>
+    <title>{% block title %}TravelGramers{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="TravelGramers is a travel blog where you can share your travel experiences with others.">
+    <meta name="keywords" content="travel, blog, experience, share, story, vacation, holidays">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dbybmxt1u/image/upload/v1661529087/icon_mcuodh.png">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
+
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
@@ -63,7 +71,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-primary" style="color: hsl(24, 26%, 96%)" !important
-                            href="{% url 'account_signup' %}">Register</a>
+                            href="{% url 'account_signup' %}">Sign Up</a>
                     </li>
                     {% endif %}
                 </ul>
@@ -93,8 +101,7 @@
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3 poppin-text" style="background-color: #006ccd;">
-        <p class="m-0 text-center text-white" style="padding: 0.5em;">Copyright © 2022 Travelgramers. All rights
-            reserved.</p>
+        <p class="m-0 text-center text-white" style="padding: 0.5em;">Copyright © 2022 Travelgramers.</p>
         <p class="m-0 text-center text-white" style="padding: 0.5em;">Instagram<a href="https://www.instagram.com"
                 target="_blank" rel="noopener" aria-label="Instagram"><i
                     class="fab fa-instagram-square ms-1 text-white"></i></a>&#8203 LinkedIn<a href="https://www.linkedin.com"
