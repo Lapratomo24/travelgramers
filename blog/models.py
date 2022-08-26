@@ -37,6 +37,11 @@ class Post(models.Model):
         """
         return reverse('post_detail', kwargs={'slug': self.slug})
 
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.title)
+        return super().save(*args, **kwargs)
+
     def __str__(self):
         """
         Method used to return the title
@@ -61,7 +66,7 @@ class Comment(models.Model):
     email = models.EmailField()
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-    approved = models.BooleanField(default=False)
+    approved = models.BooleanField(default=True)
 
     class Meta:
         """

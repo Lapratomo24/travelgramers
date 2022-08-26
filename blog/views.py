@@ -139,7 +139,7 @@ class UpdatePost(SuccessMessageMixin, LoginRequiredMixin, UserPassesTestMixin, U
 
     def form_valid(self, form):
         """
-        Method to set the logged-in user as the author of a new post
+        Method to set the logged-in user as the author of an updated post
         """
         form.instance.author = self.request.user
         return super().form_valid(form)
@@ -159,3 +159,16 @@ class UpdatePost(SuccessMessageMixin, LoginRequiredMixin, UserPassesTestMixin, U
             cleaned_data,
             calculated_field=self.object.title,
         )
+
+
+class PostDeletion(DeleteView):
+    """
+    Class to allow a logged-in user to delete their post(s)
+    """
+    model = Post
+    template_name = 'delete.html'
+    success_message = "%(calculated_field)s has been deleted"
+    success_url = reverse_lazy('home')
+
+    def delete(self, request, *args, **kwargs):
+        return super().delete(request, *args, **kwargs)

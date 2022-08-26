@@ -107,7 +107,7 @@
                 <!-- For comments -->
                 {% if commented %}
                 <div class="alert alert-success" role="alert">
-                    Your comment is awaiting approval
+                    Your comment has been added!
                 </div>
                 {% else %}
 
@@ -129,6 +129,7 @@
     <div>
         {% if user.is_authenticated and post.author.id == user.id %}
         <a role="button" type="submit" class="btn btn-signup btn-lg" href="{% url 'update' post.slug %}" style="margin: 0.75em">Update</a>
+        <a role="button" type="submit" class="btn btn-danger btn-lg" href="{% url 'delete' post.slug %}" style="margin: 0.75em 0 0.75em 0">Delete</a>
         {% endif %}
     </div>
 </div>
