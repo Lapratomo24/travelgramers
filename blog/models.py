@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.urls import reverse
 from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
@@ -29,6 +30,12 @@ class Post(models.Model):
         Class to order posts in descending order
         """
         ordering = ['-created_on']
+    
+    def get_absolute_url(self):
+        """
+        Method to return users back to post_detail url
+        """
+        return reverse('post_detail', kwargs={'slug': self.slug})
 
     def __str__(self):
         """

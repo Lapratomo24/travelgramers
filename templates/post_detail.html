@@ -126,6 +126,11 @@
             </div>
         </div>
     </div>
+    <div>
+        {% if user.is_authenticated and post.author.id == user.id %}
+        <a role="button" type="submit" class="btn btn-signup btn-lg" href="{% url 'update' post.slug %}" style="margin: 0.75em">Update</a>
+        {% endif %}
+    </div>
 </div>
 
 {% endblock content %}

@@ -1,7 +1,8 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.contrib import messages
+from django.urls import reverse_lazy
 from django.contrib.messages.views import SuccessMessageMixin
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import View, ListView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.http import HttpResponseRedirect
@@ -97,9 +98,11 @@ class CreatePost(SuccessMessageMixin, LoginRequiredMixin, CreateView):
     """
     Class to allow a logged-in user to add a new post
     """
+    model = Post
     form_class = ShareForm
     template_name = 'create.html'
     success_message = "%(calculated_field)s was created successfully"
+    success_url = reverse_lazy('post_detail')
 
     def form_valid(self, form):
         """
@@ -123,3 +126,36 @@ def about(request):
     Method to display about page 
     """
     return render(request, "about.html")
+
+
+class UpdatePost(SuccessMessageMixin, LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """
+    Class to allow a logged-in user to update their post(s)
+    """
+    model = Post
+    form_class = ShareForm
+    template_name = 'update.html'
+    success_message = "%(calculated_field)s was updated successfully"
+
+    def form_valid(self, form):
+        """
+        Method to set the logged-in user as the author of a new post
+        """
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+    def test_func(self):
+        """
+        Method to prevent invalid user from updating post(s) belonging to another
+        """
+        post = self.get_object()
+        return post.author == self.request.user
+
+    def get_success_message(self, cleaned_data):
+        """
+        Message to indicate a successfully-updated post
+        """
+        return self.success_message % dict(
+            cleaned_data,
+            calculated_field=self.object.title,
+        )
