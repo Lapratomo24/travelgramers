@@ -33,7 +33,6 @@ class ShareForm(forms.ModelForm):
         fields = [
             "title",
             "featured_image",
-            "status",
             "description",
             "attractions",
         ]
@@ -42,6 +41,3 @@ class ShareForm(forms.ModelForm):
             "description": SummernoteWidget(),
             "attractions": SummernoteWidget(),
         }
-
-
-

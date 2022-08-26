@@ -102,7 +102,7 @@ class CreatePost(SuccessMessageMixin, LoginRequiredMixin, CreateView):
     form_class = ShareForm
     template_name = 'create.html'
     success_message = "%(calculated_field)s was created successfully"
-    success_url = reverse_lazy('post_detail')
+    success_url = reverse_lazy('home')
 
     def form_valid(self, form):
         """
