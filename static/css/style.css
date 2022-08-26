@@ -145,6 +145,10 @@ body {
     border: none;
 }
 
+footer p a i:hover {
+    box-shadow: 0 0 10px white;
+}
+
 .navbar-nav.ms-auto.mb-2.mb-lg-0 li a {
     color: #006ccd;
     margin-right: 20px;
