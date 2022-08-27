@@ -31,7 +31,7 @@
     {% if user.is_authenticated and post.author.id == user.id %}
     <a role="button" type="submit" class="btn btn-signup btn-lg ms-3" style="font-size: small;"
         href="{% url 'update' post.slug %}">Update</a>
-    <a role="button" type="submit" class="btn btn-danger btn-lg ms-3" style="font-size: small;"
+    <a role="button" type="submit" class="btn btn-outline-danger btn-lg ms-3" style="font-size: small;"
         href="{% url 'delete' post.slug %}">Delete</a>
     {% endif %}
 </div>

@@ -1,20 +1,25 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
 
-{% block content %} 
+{% block content %}
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-12 mt-5 offset-md-2">
-            <h2>Delete your post?</h2>
-            <h5>This can not be undone.</h5>
-            <br>
+    <div class="row justify-content-end">
+        <div class="col-md-8 mt-5 offset-md-2">
+            <h2 class="page-title mb-3">Delete your post?</h2>
+            <p>This can not be undone.</p>
+        </div>
+    </div>
+    <div class="row justify-content-end">
+        <div class="col-md-8 mt-3 offset-md-2">
             <form method="POST">
                 {% csrf_token %}
                 <button type="submit" value="delete" class="btn btn-outline-danger">Delete</button>
-                <a class="btn btn-outline-primary" href="{%  url 'post_detail' post.slug %}">Cancel</a>
+                <a class="btn btn-signup" href="{%  url 'post_detail' post.slug %}">Cancel</a>
             </form>
         </div>
     </div>
 </div>
+
+
 
 {% endblock %}

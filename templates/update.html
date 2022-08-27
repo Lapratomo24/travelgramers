@@ -5,14 +5,14 @@
 {% if user.is_authenticated and post.author.id == user.id %}
 
 <div class="container-fluid">
-    <h1 class="page-title row justify-content-center mt-5" style="color:#006ccd">Want to add more?</h1>
+    <h1 class="page-title row justify-content-center mt-5">Anything to add?</h1>
 </div>
-<div class="row justify-content-center">
+<div class="container-fluid row justify-content-center">
     <div class="col-11 col-md-8 col-lg-6 my-4">
-        <form method="post" class="form-shape mb-4" enctype="multipart/form-data">
+        <form method="post" class="form-title mb-4" enctype="multipart/form-data">
             {{ form | crispy }}
             {% csrf_token %}
-            <button type="submit" class="btn btn-outline-primary effect">Update</button>
+            <button type="submit" class="btn btn-signup">Update</button>
             <a class="btn btn-outline-danger" href="{%  url 'post_detail' post.slug %}">Cancel</a>
         </form>
     </div>
