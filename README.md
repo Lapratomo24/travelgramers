@@ -43,7 +43,7 @@ TravelGramers is a travel blog that is targeted to a specific audience: those wh
 **Epic - Post Management**
 - As a user, I would like to be able to create a post so that I can share my travel experience on the site.
 - As a user, I would like to be able to edit/update my own post(s) so that I can always add more information to it.
-- As a user, I would like to be able to delete my own post(s) so that I can be fully in control of what I decide to post.
+- As a user, I would like to be able to delete my own post(s) so that I can be fully in control as a post owner.
 - As a user, I would like to be able to log in so that I would be able to edit/update or delete my post(s).
 - As a user, I would like to be able to leave and remove a like so that I can interact with the posts belonging to other users.
 - As a user, I would like to be able to leave a comment (or more) so that I can interact with the posts belonging to other users.
