@@ -139,10 +139,8 @@ a.nav-link.active {
 
 .parallax-header {
     background: #000;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-    ), url("https://res.cloudinary.com/dbybmxt1u/image/upload/v1661175636/vienna_cizkr9.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dbybmxt1u/image/upload/v1661175636/vienna_cizkr9.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -153,10 +151,29 @@ a.nav-link.active {
     padding: 200px 0 200px 0;
 }
 
-.subtitle {
+.welcome-message {
     font-size: large;
-    line-height: 2.5;
+    padding-top: 20px;
     color: hsl(24, 26%, 96%);
+    --x-offset: -0.0625em;
+    --y-offset: 0.0625em;
+    --stroke: 0.025em;
+    --background-color: #000;
+    --stroke-color: #000;
+
+    text-shadow:
+
+        var(--x-offset) var(--y-offset) 0px var(--background-color),
+
+        calc(var(--x-offset) - var(--stroke)) calc(var(--y-offset) + var(--stroke)) 0px var(--stroke-color);
+}
+
+.subtitle {
+    font-family: 'Abril Fatface', cursive;
+    color: #23BBBB;
+    padding: 40px 0 20px 0;
+    font-weight: 900;
+    font-size: 2em;
 }
 
 .form-title label {
@@ -168,12 +185,15 @@ a.nav-link.active {
     .minimize-tagline {
         width: 90%;
     }
+
     .subtitle {
-        font-size: medium;
+        font-size: 1.5em;
     }
+
     .masthead-text h1 {
         font-size: 1.6em;
     }
+
     .masthead-text p {
         font-size: 0.8em;
     }
@@ -183,12 +203,15 @@ a.nav-link.active {
     .minimize-tagline {
         width: 85%;
     }
+
     .subtitle {
-        font-size: small;
+        font-size: larger;
     }
+
     .masthead-text h1 {
         font-size: 1.2em;
     }
+
     .masthead-text p {
         font-size: 0.6em;
     }

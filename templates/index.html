@@ -7,14 +7,16 @@
         <div class="main-text">
             <img class="d-block mx-auto minimize-tagline" width="600"
                 src="https://res.cloudinary.com/dbybmxt1u/image/upload/v1661186502/site-logo_naalqt.png">
-            <h3 class="text-center text-light poppin-text subtitle">Share Your Unique Travel Experience</h3>
+            {% if user.is_authenticated %}
+            <h3 class="text-center text-light welcome-message">Welcome, {{ request.user }}!</h3>
+            {% endif %}
         </div>
     </div>
 </div>
 
 <div class="container-fluid">
     <div class="row">
-
+        <h3 class="text-center subtitle">Share Your Unique Travel Experience</h3>
         <!-- Blog Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
