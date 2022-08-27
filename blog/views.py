@@ -1,5 +1,4 @@
 from django.shortcuts import render, get_object_or_404, reverse
-from django.contrib import messages
 from django.urls import reverse_lazy
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
@@ -45,7 +44,6 @@ class PostDetail(View):
                 "comment_form": CommentForm()
             }
         )
-
 
     def post(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
@@ -122,8 +120,8 @@ class CreatePost(SuccessMessageMixin, LoginRequiredMixin, CreateView):
 
 
 def about(request):
-    """ 
-    Method to display about page 
+    """
+    Method to display about page
     """
     return render(request, "about.html")
 
@@ -146,7 +144,7 @@ class UpdatePost(SuccessMessageMixin, LoginRequiredMixin, UserPassesTestMixin, U
 
     def test_func(self):
         """
-        Method to prevent invalid user from updating post(s) belonging to another
+        Method to prevent invalid user from updating post(s) of another
         """
         post = self.get_object()
         return post.author == self.request.user

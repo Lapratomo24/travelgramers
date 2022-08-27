@@ -31,7 +31,7 @@ class Post(models.Model):
         Class to order posts in descending order
         """
         ordering = ['-created_on']
-    
+
     def get_absolute_url(self):
         """
         Method to return users back to post_detail url
