@@ -20,7 +20,7 @@ TravelGramers is a travel blog that is targeted to a specific audience: those wh
 
 ### Agile Methodology
 
-As part of the requirements to start this project, an Agile Methodology was used in order to draft and develop the site. This approach played an important part during the planning phase as I managed to break down the project into smaller tasks.
+As part of the requirements to start this project, an Agile Methodology was used in order to draft and develop the website. This approach played an important part during the planning phase as I managed to break down the project into smaller tasks.
 
 [Github Projects](https://github.com/users/Lapratomo24/projects/6/views/1) was used to set up a Kanban Board. Please see the attached screenshots below for the completed rundown of the phases.
 
@@ -58,23 +58,23 @@ There are 14 issues, or in other words, User Stories that were planned and docum
 
 **Epic - Site Navigation**
 - As a user, I would like to be able to immediately understand the purpose of the website so that I can use it to the full extent.
-- As a user, I would like to be able to navigate through the pages of the site with ease so that I can keep track of where I am.
+- As a user, I would like to be able to navigate through the pages of the website with ease so that I can keep track of where I am.
 - As a user, I would like to be able to see a paginated list of posts so that I can select which post I would like to view.
 - As a user, I would like to be able to view each post in detail so that I can read the post's content in detail.
 - As a user, I would like to be able to see the number of likes on each post without having to view it in detail.
-- As a user, I would like to be able to click the social media buttons so that I can interact with the creator of the site.
+- As a user, I would like to be able to click the social media buttons so that I can interact with the creator of the website.
 - As a user, I would like to be able to see each post's date and time of creation so that I can find out when the post was published.
 - As a user, I would like to be able to see if an error occurs so that I can address it.
 - As a user, I would like to be able to get a notification so that I can tell whether my registration, login, and logout attempts are successful.
 
 **Epic - User Profile**
 - As a user, I would like to be able to register a blog account so that I can have my own blog account.
-- As a user, I would like to be able to log in so that I can fully interact with the site.
+- As a user, I would like to be able to log in so that I can fully interact with the website.
 - As a user, I would like to be able to see my post-login status immediately so that can know my login is successful.
 - As a user, I would like to be able to log out so that I can prevent another user from using my account.
 
 **Epic - Post Management**
-- As a user, I would like to be able to create a post so that I can share my travel experience on the site.
+- As a user, I would like to be able to create a post so that I can share my travel experience on the website.
 - As a user, I would like to be able to edit/update my own post(s) so that I can always add more information to it.
 - As a user, I would like to be able to delete my own post(s) so that I can be fully in control as a post author.
 - As a user, I would like to be able to log in so that I would be able to edit/update or delete my post(s).
@@ -285,6 +285,8 @@ At the bottom of the page is where the comment section is displayed. To be more 
 
 ### Manual Testing
 
+As a site administrator, I confirm to be able to use the CRUD operations so that I can fully manage TravelGrames blog website.
+
 **Site Navigation**
 
 | Feature | Action | Expected Outcome | Result |
@@ -364,10 +366,19 @@ At the bottom of the page is where the comment section is displayed. To be more 
 
 **Site Navigation: Mobile View**
 
+| Feature | Action | Expected Outcome | Result |
+| - | - | - | - |
 | Bars | Display | Displayed when in mobile view or when resizing to a smaller screen | PASS |
 | Bars | Click | Toggles a dropdown menu consisting of 4 navigation items | PASS |
 | All pages | Display | Shows full responsiveness | PASS |
 
+### Automated Testing
+
+Due to my limited knowledge combined with strict time constraints, I was only able to implement few automated testing test procedures as follows: 
+
+![Testing](media/img/test_views.png)
+
+![Testing](media/img/test_forms.png)
 
 
 
