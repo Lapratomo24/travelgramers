@@ -258,20 +258,20 @@ These 3 pages represent the 3 out of 4 basic operations of programming: Create, 
 
 The post detail page represents the view operation of programming. Here is where users can view their own post(s) as well as posts created by other users. The section at the top displays the title of the post, which is the travel location, and the exact date and time when the post was published. To the right is the exact same picture for the post that is initially visible on the homepage. Below this section, the description of the post can be seen, then followed by the attractions of the post location, which in this case is in the form of a unordered list. Underneath the bullet points are the number of likes and comments left by other users who viewed this particular post. 
 
-![Features](media/img/features/post-detail1.pngpng)
+![Features](media/img/features/post-detail1.png)
 
 Users who do not log in will not be able to interact with the like button, nor will they be able to see the comment form on the right side of the page. Moreover, the update and delete buttons will not be displayed to the author of a post if they do not log in beforehand. The following screenshot shows the version of the same page after logging in:
 
 <details><summary><b>Post Detail (logged in)</b></summary>
 
-![Features](media/img/features/post-detail2.pngpng)
+![Features](media/img/features/post-detail2.png)
 </details><br />
 
 At the bottom of the page is where the comment section is displayed. To be more specific, unless viewed on smaller screens, comments are displayed on the left while the comment form for users to leave their comment(s) is displayed on the right. The submit button is displayed below the form.
 
 <details><summary><b>Comment Section</b></summary>
 
-![Features](media/img/features/comment.pngpng)
+![Features](media/img/features/comment.png)
 </details><br />
 
 ### Future Features
@@ -288,7 +288,27 @@ At the bottom of the page is where the comment section is displayed. To be more 
 
 | Feature | Action | Expected Outcome | Result |
 | - | - | - | - |
-| Logo | Click | Redirects to homepage | PASS |
+| Homepage | | | |
+| - | - | - | - |
+| Not logged in state | | | |
+| Home nav item | Click | Redirects to homepage | PASS |
+| Home nav item | Click | Redirects to homepage | PASS |
+| About nav item | Click | Redirects to about page | PASS |
+| Home nav item | Click | Redirects to homepage | PASS |
+| Login nav item | Click | Redirects to login page | PASS |
+| Signup nav item | Click | Redirects to signup page | PASS |
+| Logged in state | | | |
+| Create nav item | Display | Replaces login button | PASS |
+| Create nav item | Click | Redirects to create page | PASS |
+| Logout nav item | Display | Replaces signup button | PASS |
+| Logout nav item | Click | Redirects to homepage | PASS |
+| Tell your story button | Display | Displayed after logging in | PASS |
+| Tell your story button | Click | Redirects to create page | PASS |
+| Regular state | | | |
+| Image Card | Click | Redirects to post detail page | PASS |
+| Post author | Click | Redirects to post detail page | PASS |
+| Instagram icon | Click | Redirects to instagram website | PASS |
+| LinkedIn icon | Click | Redirects to linkedin website | PASS |
 
 
 
