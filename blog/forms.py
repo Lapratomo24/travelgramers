@@ -15,14 +15,14 @@ class CommentForm(forms.ModelForm):
         fields = ('body',)
 
 
-class ShareForm(forms.ModelForm):
+class CreateForm(forms.ModelForm):
     """
     Class to create a form that users can fill out to share their
     travel experience
     """
 
     def __init__(self, *args, **kwargs):
-        super(ShareForm, self).__init__(*args, **kwargs)
+        super(CreateForm, self).__init__(*args, **kwargs)
 
     class Meta:
         """

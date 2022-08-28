@@ -170,7 +170,7 @@ All of the images displayed on the posts, as well as the hero image, belong to m
 
 ## Structure and Features
 
-TravelGramers consists of multiple pages, albeit the structure is quite simple to navigate. It is also fully responsive across all screen sizes. Every page is described in detail below which includes the available features.
+TravelGramers consists of multiple pages, albeit the structure is quite simple to navigate. It is compatible on all major browsers and fully responsive across all screen sizes. Every page is described in detail below which includes the available features.
 
 ### Homepage
 
@@ -415,6 +415,14 @@ Lighthouse validation was run across all pages of the website in order to check 
 ![Validation](media/img/validation/lighthouse_homepage.png)
 
 ![Validation](media/img/validation/lighthouse_postdetail.png)
+
+## Bugs
+
+- The hero image implements a parallax effect on the homepage. The parallax itself is responsive, while the image depicting Florence, Italy is not. I tried googling the solution and found this [site](https://inkplant.com/code/responsive-parallax-images). As instructed, I tried implementing some JQuery code and tinkered with the code for a long while. Due to my limited knowledge, I am still not able to implement proper responsiveness to the image. What I did in the end was edit the image in a such a way that it gives off the impression of being responsiive. The JQuery is still visible on base.html while being commented out.
+
+- The positioning of both the header and image on the post detail page was quite frustrating to fix due to my limited knowledge in bootstrap column and grid systems. The initial setup as how it looks on the Django Blog Tutorial was not the best when using square images, so I decided to tinker with it until I managed to produce the final layout. 
+
+
 
 
 **Anything more?**

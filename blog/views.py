@@ -6,7 +6,7 @@ from django.views.generic import View, ListView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.http import HttpResponseRedirect
 from .models import Post
-from .forms import CommentForm, ShareForm
+from .forms import CommentForm, CreateForm
 
 # Create your views here.
 
@@ -97,7 +97,7 @@ class CreatePost(SuccessMessageMixin, LoginRequiredMixin, CreateView):
     Class to allow a logged-in user to add a new post
     """
     model = Post
-    form_class = ShareForm
+    form_class = CreateForm
     template_name = 'create.html'
     success_message = "%(calculated_field)s was created successfully"
     success_url = reverse_lazy('home')
@@ -131,7 +131,7 @@ class UpdatePost(SuccessMessageMixin, LoginRequiredMixin, UserPassesTestMixin, U
     Class to allow a logged-in user to update their post(s)
     """
     model = Post
-    form_class = ShareForm
+    form_class = CreateForm
     template_name = 'update.html'
     success_message = "%(calculated_field)s was updated successfully"
 
