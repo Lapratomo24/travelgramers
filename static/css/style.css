@@ -96,6 +96,10 @@ body {
     color: #fff;
 }
 
+.signup-btn {
+    color: hsl(24, 26%, 96%) !important;
+}
+
 .link {
     color: #23BBBB;
     text-decoration: none;

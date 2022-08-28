@@ -380,6 +380,41 @@ Due to my limited knowledge combined with strict time constraints, I was only ab
 
 ![Testing](media/img/test_forms.png)
 
+## Code Validation
+
+TravelGramers has been validated through W3C Validator for both HTML and CSS. The single JavaScript code on the base.html has also been checked with JSHint for its validity. Moreover, PEP8 was used to test the validity of python code.
+
+### HTML
+
+All pages passed the validation test with the exception of errors that are caused by images that are uploaded and published as part of a user's post as detailed in the screenshot below. I believe these are errors that can be ignored, as otherwise I am not certain where in the code they can be fixed. Please provide clarity during assessment if possible, thank you.
+
+![Validation](media/img/validation/html_validator.png)
+
+### CSS
+
+CSS code passed the validation test with flying colors.
+
+![Validation](media/img/validation/css_validator.png)
+
+### JavaScript
+
+The single JavaScript code passed the validation test as expected.
+
+![Validation](media/img/validation/js_validator.png)
+
+### Python
+
+Aside from some 'line too long' errors in settings.py as seen in the below example, Python code passed the validation test.
+
+![Validation](media/img/validation/python_validator.png)
+
+### Lighthouse
+
+Lighthouse validation was run across all pages of the website in order to check performance, accessibility, best practices, and SEO. The 'small' pages with minimum content passed with flying colors, though admittedly the pages with the most content do not have the best results. And due to time constraints, I am not able to improve the scores as desired at least until I receive the grade, after which I plan to revisit the project and try implement some updates.
+
+![Validation](media/img/validation/lighthouse_homepage.png)
+
+![Validation](media/img/validation/lighthouse_postdetail.png)
 
 
 **Anything more?**
