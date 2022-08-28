@@ -290,29 +290,29 @@ At the bottom of the page is where the comment section is displayed. To be more 
 | Feature | Action | Expected Outcome | Result |
 | - | - | - | - |
 | Homepage |
-| Not logged in state | | | |
+| Not logged in state |
 | Home nav item | Click | Redirects to homepage | PASS |
 | Home nav item | Click | Redirects to homepage | PASS |
 | About nav item | Click | Redirects to about page | PASS |
 | Home nav item | Click | Redirects to homepage | PASS |
 | Login nav item | Click | Redirects to login page | PASS |
 | Signup nav item | Click | Redirects to signup page | PASS |
-| Logged in state | | | |
+| Logged in state |
 | Create nav item | Display | Replaces login button | PASS |
 | Create nav item | Click | Redirects to create page | PASS |
 | Logout nav item | Display | Replaces signup button | PASS |
 | Logout nav item | Click | Redirects to homepage | PASS |
 | Tell your story button | Display | Displayed after logging in | PASS |
 | Tell your story button | Click | Redirects to create page | PASS |
-| Regular state | | | |
+| Regular state |
 | Image Card | Click | Redirects to post detail page | PASS |
 | Post author | Click | Redirects to post detail page | PASS |
 | Instagram icon | Click | Redirects to instagram website | PASS |
 | LinkedIn icon | Click | Redirects to linkedin website | PASS |
 | About page |
-| Not logged in state | | | |
+| Not logged in state |
 | HERE link | Click | Redirects to login page | PASS |
-| Logged in state | | | |
+| Logged in state |
 | HERE link | Click | Redirects to create page | PASS |
 | Signup page |
 | Username field | Empty | Prompts user to fill out | PASS |
@@ -320,20 +320,47 @@ At the bottom of the page is where the comment section is displayed. To be more 
 | Password field | Fewer than 8 chars | Prompts user to provide at least 8 chars | PASS |
 | Email field | Empty | Does not prompt user to fill out as it is optional | PASS |
 | Sign up button | Click | Redirects to homepage | PASS |
+| Sign up button | Display | Display successful signup message after getting to homepage | PASS |
 | Login page |
 | Username field | Empty | Prompts user to fill out | PASS |
 | Password field | Empty | Prompts user to fill out | PASS |
 | Remember me checkbox | Unclicked | Does not prompt user to click as it is optional | PASS |
-| Sign up button | Click | Redirects to homepage | PASS |
+| Log in button | Click | Redirects to homepage | PASS |
 | HERE link | Click | Redirects to signup page | PASS |
+| Log in button | Display | Display successful login message after getting to homepage | PASS |
 | Logout page |
 | Log out button | Click | Redirects to homepage | PASS |
-
-
-
-
-
-
+| Log out button | Display | Display successful logout message after getting to homepage | PASS |
+| Post detail page |
+| Not logged in state |
+| Update button | Display | Not displayed | PASS |
+| Delete button | Display | Not displayed | PASS |
+| Like icon | Click | Unclickable | PASS |
+| Comment form | Display | Not displayed | PASS |
+| Comment section | Display | Displayed under icons | PASS |
+| Logged in state |
+| Update button | Display | Displayed under header | PASS |
+| Delete button | Display | Displayed under header  | PASS |
+| Like icon | Click | Clickable | PASS |
+| Comment form | Display | Displayed | PASS |
+| Comment form | Empty | Prompts user to fill out when clicking submit button | PASS |
+| Submit button | Click | Submits comment when filled out | PASS |
+| Submit button | Click | Displays successful message after clicking | PASS |
+| Comment section | Display | Displays new comment under other comment(s) | PASS |
+| Create and Update pages |
+| Title field | Empty | Prompts user to fill out | PASS |
+| Image browse button | Unclicked | Does not prompt user to select an image as a placeholder will be displayed | PASS |
+| Description field | Empty | Prompts user to fill out | PASS |
+| Attractions field | Empty | Prompts user to fill out | PASS |
+| Submit button | Click | Submits post when filled out | PASS |
+| Submit button | Click | Displays successful message after getting to homepage | PASS |
+| Cancel button | Click | Redirects to homepage | PASS |
+| Update button | Click | Submits post when filled out | PASS |
+| Update button | Click | Displays successful message after getting to homepage | PASS |
+| Delete button | Click | Redirects to homepage | PASS |
+| Delete page |
+| Delete button | Click | Deletes post and redirects to homepage | PASS |
+| Cancel button | Click | Redirects to post detail page | PASS |
 
 **Anything more?**
 
