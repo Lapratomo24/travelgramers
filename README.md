@@ -76,7 +76,7 @@ There are 14 issues, or in other words, User Stories that were planned and docum
 **Epic - Post Management**
 - As a user, I would like to be able to create a post so that I can share my travel experience on the site.
 - As a user, I would like to be able to edit/update my own post(s) so that I can always add more information to it.
-- As a user, I would like to be able to delete my own post(s) so that I can be fully in control as a post owner.
+- As a user, I would like to be able to delete my own post(s) so that I can be fully in control as a post author.
 - As a user, I would like to be able to log in so that I would be able to edit/update or delete my post(s).
 - As a user, I would like to be able to leave and remove a like so that I can interact with the posts belonging to other users.
 - As a user, I would like to be able to leave a comment (or more) so that I can interact with the posts belonging to other users.
@@ -178,12 +178,9 @@ The homepage is where users will find a paginated list of blog posts. The posts 
 
 The navigation bar consists of a TravelGramers logo on the left and 4 navigation items on the right which include home, about, log in, and sign up. The latter 2 are replaced by create and log out whenever a user logs in with their account. Between the navigation bar and the posts, a hero image is displayed with an overlay of a big TravelGramers logo. Once logged in, users will see a welcome message which displays their username underneath the logo. 
 
-<details><summary><b>Navbar and Hero Image</b></summary>
-
 ![Features](media/img/features/homepage1.png)
-</details><br />
 
-Just below the hero image, a tagline that says "Share your unique travel experience" invites users to create a post on the blog. Once logged in, users will see a call-to-action button underneath the tagline which redirects to the create page. The first set of 3 posts then follows.
+Just below the hero image, a tagline that says "Share your unique travel experience" invites users to create a post on the blog. Once logged in, users will see a call-to-action button underneath the tagline which redirects to the create page. The first set of 3 posts then follows, each of which is represented with an image, author's name, title, exact date and time of publishing, and the number of likes for the post.
 
 <details><summary><b>Tagline and 1st Set of Posts</b></summary>
 
@@ -208,10 +205,7 @@ The footer includes a copyright text and 2 social media icons which when clicked
 
 The about page informs users of what TravelGramers is about. It describes the significance of traveling and invites users to tell their travel stories. A link to the create page can be found within the last sentence of the page.
 
-<details><summary><b>About</b></summary>
-
 ![Features](media/img/features/about.png)
-</details><br />
 
 ### Login, Logout, and Signup Pages
 
@@ -244,12 +238,9 @@ These 3 pages represent the 3 out of 4 basic operations of programming: Create, 
 
 - The create page utilizes Summernote for 2 of the available fields for users to fill out. The page header can be seen at the top of the page, under which the recommended use of a square image is stated. The first field is the title field, which is followed by the django-provided browse button for users to upload an image. Then then afore-mentioned Summernote widgets are displayed in the form of, well, forms. The first form asks user to fill out the description of their travel experience, and the second asks for the main attractions users visited whilst traveling. At the bottom of the page, the submit and cancel buttons can be seen.
 
-<details><summary><b>Create</b></summary>
-
 ![Features](media/img/features/create.png)
-</details><br />
 
-- The update page is essentially an exact copy of the create page. Since the theme here is update, the title field and forms will have been pre-filled beforehand when a user created the initial post, as they can not be empty. The page header asks whether there is anything to update and the submit button from the create page is replace with an update button.
+- The update page is essentially an exact copy of the create page. Since the theme here is update, the title field and forms will have been pre-filled beforehand when a user created the initial post, as they can not be empty. The page header asks whether there is anything to update and the submit button from the create page is replaced with an update button.
 
 <details><summary><b>Update</b></summary>
 
@@ -263,6 +254,25 @@ These 3 pages represent the 3 out of 4 basic operations of programming: Create, 
 ![Features](media/img/features/delete.png)
 </details><br />
 
+### Post Detail Page
+
+The post detail page represents the view operation of programming. Here is where users can view their own post(s) as well as posts created by other users. The section at the top displays the title of the post, which is the travel location, and the exact date and time when the post was published. To the right is the exact same picture for the post that is initially visible on the homepage. Below this section, the description of the post can be seen, then followed by the attractions of the post location, which in this case is in the form of a unordered list. Underneath the bullet points are the number of likes and comments left by other users who viewed this particular post. 
+
+![Features](media/img/features/post-detail1.pngpng)
+
+Users who do not log in will not be able to interact with the like button, nor will they be able to see the comment form on the right side of the page. Moreover, the update and delete buttons will not be displayed to the author of a post if they do not log in beforehand. The following screenshot shows the version of the same page after logging in:
+
+<details><summary><b>Post Detail (logged in)</b></summary>
+
+![Features](media/img/features/post-detail2.pngpng)
+</details><br />
+
+At the bottom of the page is where the comment section is displayed. To be more specific, unless viewed on smaller screens, comments are displayed on the left while the comment form for users to leave their comment(s) is displayed on the right. The submit button is displayed below the form.
+
+<details><summary><b>Comment Section</b></summary>
+
+![Features](media/img/features/comment.pngpng)
+</details><br />
 
 
 
