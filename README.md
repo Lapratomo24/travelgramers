@@ -26,27 +26,27 @@ As part of the requirements to start this project, an Agile Methodology was used
 
 <details><summary><b>Phase 1</b></summary>
 
-![Agile](media/img/agile_phase1.png)
+![Agile](media/img/agile/agile_phase1.png)
 </details><br />
 
 <details><summary><b>Phase 2</b></summary>
 
-![Agile](media/img/agile_phase2.png)
+![Agile](media/img/agile/agile_phase2.png)
 </details><br />
 
 <details><summary><b>Phase 3</b></summary>
 
-![Agile](media/img/agile_phase3.png)
+![Agile](media/img/agile/agile_phase3.png)
 </details><br />
 
 <details><summary><b>Phase 4</b></summary>
 
-![Agile](media/img/agile_phase4.png)
+![Agile](media/img/agile/agile_phase4.png)
 </details><br />
 
 <details><summary><b>Phase 5</b></summary>
 
-![Agile](media/img/agile_phase5.png)
+![Agile](media/img/agile/agile_phase5.png)
 </details><br />
 
 There are 14 issues, or in other words, User Stories that were planned and documented as the project was being developed in order to achieve the desired result. These issues were then further classified as 4 main Epics as follows.
@@ -81,88 +81,132 @@ There are 14 issues, or in other words, User Stories that were planned and docum
 - As a user, I would like to be able to leave and remove a like so that I can interact with the posts belonging to other users.
 - As a user, I would like to be able to leave a comment (or more) so that I can interact with the posts belonging to other users.
 
+## Design
+
+As stated previously, this blog website follows the same initial setup as the tutorial. The design of the homepage, as well as subsequent pages, may look similar to the finished website shown in the tutorial, albeit adjusted with my own design. 
+
 ### Data Model
 
 Due to strict time constraints, I decided to develop a blog website which follows the same initial setup as Matt Rudge's Django Blog Tutorial, therefore there are only 2 data models: Post and Comment. And for the sake of simplicity, 2 things are adjusted: The status of a new post is automatically set to published, and comments made by users will also be automatically approved and displayed on the comment section. The database model is as follows:
 
 ![Database](media/img/database.png)
 
-### Design
+### Logo
 
-As stated previously, this blog website follows the same initial setup as the tutorial. The design of the homepage, as well as subsequent pages, may look similar to the finished website shown in the tutorial, albeit adjusted with my own design. 
+I created the TravelGramers logo, seen at the top of this readme file, on [Canva](https://www.canva.com/), which has always been my go-to design tool for many years.
 
-**Wireframes**
+### Wireframes
 
-[Canva](https://www.canva.com/) was used to create the wireframes for TravelGramers. The following are the wireframes for each page on the finished website.
+Similary, Canva was also used to create the wireframes for TravelGramers. The following are the wireframes for each page on the finished website.
 
 <details><summary><b>Homepage (not logged in)</b></summary>
 
-![Wireframe](media/img/wireframe_home1.png)
+![Wireframes](media/img/wireframes/wireframe_home1.png)
 </details><br />
 
 <details><summary><b>Homepage (logged in)</b></summary>
 
-![Wireframe](media/img/wireframe_home2.png)
+![Wireframes](media/img/wireframes/wireframe_home2.png)
 </details><br />
 
 <details><summary><b>Create Page</b></summary>
 
-![Wireframe](media/img/wireframe_create.png)
+![Wireframes](media/img/wireframes/wireframe_create.png)
 </details><br />
 
 <details><summary><b>Post Detail Page (not logged in)</b></summary>
 
-![Wireframe](media/img/wireframe_post1.png)
+![Wireframes](media/img/wireframes/wireframe_post1.png)
 </details><br />
 
 <details><summary><b>Post Detail Page (logged in)</b></summary>
 
-![Wireframe](media/img/wireframe_post2.png)
+![Wireframes](media/img/wireframes/wireframe_post2.png)
 </details><br />
 
 <details><summary><b>Update Page</b></summary>
 
-![Wireframe](media/img/wireframe_update.png)
+![Wireframes](media/img/wireframes/wireframe_update.png)
 </details><br />
 
 <details><summary><b>Delete Page</b></summary>
 
-![Wireframe](media/img/wireframe_delete.png)
+![Wireframes](media/img/wireframes/wireframe_delete.png)
 </details><br />
 
 <details><summary><b>About Page</b></summary>
 
-![Wireframe](media/img/wireframe_about.png)
+![Wireframes](media/img/wireframes/wireframe_about.png)
 </details><br />
 
 <details><summary><b>Signup Page</b></summary>
 
-![Wireframe](media/img/wireframe_signup.png)
+![Wireframes](media/img/wireframes/wireframe_signup.png)
 </details><br />
 
 <details><summary><b>Login Page</b></summary>
 
-![Wireframe](media/img/wireframe_login.png)
+![Wireframes](media/img/wireframes/wireframe_login.png)
 </details><br />
 
 <details><summary><b>Logout Page</b></summary>
 
-![Wireframe](media/img/wireframe_logout.png)
+![Wireframes](media/img/wireframes/wireframe_logout.png)
 </details><br />
 
-**Color Scheme**
+### Color Scheme
 
 The color scheme was derived from [mycolor.space](https://mycolor.space/). I use a predominantly white ash color for the background of the body as well as the navigation bar, blue-ish green for the post tile, buttons, and page headers, as well as blue for the footer.
 
 ![Color](media/img/colors.png)
 
-**Font Style**
+### Font Style
 
 The main font families used for the design of this project are [Poppins](https://fonts.google.com/specimen/Poppins?query=poppin) and [Abril Fatface](https://fonts.google.com/specimen/Abril+Fatface?query=abril) from Google Fonts.
 
-**Images**
+### Images
 
 All of the images displayed on the posts, as well as the hero image, belong to me. I am a travel enthusiast myself, hence why I decided to create this travel blog website. I fully guarantee that you will not find the exact same images online.
+
+## Structure and Features
+
+TravelGramers consists of multiple pages, albeit the structure is quite simple to navigate. Every page is described in detail below which includes the available features.
+
+### Homepage
+
+The homepage is where users will find a paginated list of blog posts. The posts are preceded by a navigation bar at the top of the screen and followed by a footer section down at the bottom, both of which are visible across all pages.
+
+- The navigation bar consists of a TravelGramers logo on the left and 4 navigation items on the right which include home, about, log in, and sign up. The latter 2 are replaced by create and log out whenever a user logs in with their account. Between the navigation bar and the posts, a hero image is displayed, on top of which a big TravelGramers logo can be seen. 
+
+<details><summary><b>Navbar and Hero Image</b></summary>
+
+![Features](media/img/features/homepage1.png)
+</details><br />
+
+- Just below the hero image, a tagline that says "Share your unique travel experience" invites users to create a post on the blog. Once logged in, users will see a 'tell your story' button underneath the tagline which redirects to the create page. The first set of 3 posts then follows.
+
+<details><summary><b>Tagline and 1st Set of Posts</b></summary>
+
+![Features](media/img/features/homepage2.png)
+</details><br />
+
+- Below the second set of 3 posts is a next button which indicates that the page is paginated by 6 posts per page.
+
+<details><summary><b>2nd Set of Post and Next Button</b></summary>
+
+![Features](media/img/features/homepage3.png)
+</details><br />
+
+- The footer includes a copyright text and 2 social media icons which when clicked will redirect users to the blog author's Instagram and LinkedIn pages, respectively.
+
+<details><summary><b>Footer</b></summary>
+
+![Features](media/img/features/homepage4.png)
+</details><br />
+
+
+
+
 
 
 
