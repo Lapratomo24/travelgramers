@@ -362,6 +362,15 @@ At the bottom of the page is where the comment section is displayed. To be more 
 | Delete button | Click | Deletes post and redirects to homepage | PASS |
 | Cancel button | Click | Redirects to post detail page | PASS |
 
+**Site Navigation: Mobile View**
+
+| Bars | Display | Displayed when in mobile view or when resizing to a smaller screen | PASS |
+| Bars | Click | Toggles a dropdown menu consisting of 4 navigation items | PASS |
+| All pages | Display | Shows full responsiveness | PASS |
+
+
+
+
 **Anything more?**
 
 Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
