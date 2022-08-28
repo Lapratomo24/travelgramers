@@ -176,7 +176,8 @@ a.nav-link.active {
     font-size: 2em;
 }
 
-.form-title label {
+.form-title label,
+.form-title {
     color: #23BBBB;
     margin: 10px 0 2px 0;
 }

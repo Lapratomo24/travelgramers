@@ -156,7 +156,7 @@ Similary, Canva was also used to create the wireframes for TravelGramers. The fo
 
 ### Color Scheme
 
-The color scheme was derived from [mycolor.space](https://mycolor.space/). I use a predominantly white ash color for the background of the body as well as the navigation bar, blue-ish green for the post tile, buttons, and page headers, as well as blue for the footer.
+The color scheme was derived from [mycolor.space](https://mycolor.space/). I use a predominantly white ash color for the background of the body as well as the navigation bar, blue-ish green for the post title, buttons, and page headers, as well as blue for the footer.
 
 ![Color](media/img/colors.png)
 
@@ -176,35 +176,35 @@ TravelGramers consists of multiple pages, albeit the structure is quite simple t
 
 The homepage is where users will find a paginated list of blog posts. The posts are preceded by a navigation bar at the top of the screen and followed by a footer section down at the bottom, both of which are visible across all pages.
 
-- The navigation bar consists of a TravelGramers logo on the left and 4 navigation items on the right which include home, about, log in, and sign up. The latter 2 are replaced by create and log out whenever a user logs in with their account. Between the navigation bar and the posts, a hero image is displayed with an overlay of a big TravelGramers logo. Once logged in, users will see a welcome message which displays their username underneath the logo. 
+The navigation bar consists of a TravelGramers logo on the left and 4 navigation items on the right which include home, about, log in, and sign up. The latter 2 are replaced by create and log out whenever a user logs in with their account. Between the navigation bar and the posts, a hero image is displayed with an overlay of a big TravelGramers logo. Once logged in, users will see a welcome message which displays their username underneath the logo. 
 
 <details><summary><b>Navbar and Hero Image</b></summary>
 
 ![Features](media/img/features/homepage1.png)
 </details><br />
 
-- Just below the hero image, a tagline that says "Share your unique travel experience" invites users to create a post on the blog. Once logged in, users will see a call-to-action button underneath the tagline which redirects to the create page. The first set of 3 posts then follows.
+Just below the hero image, a tagline that says "Share your unique travel experience" invites users to create a post on the blog. Once logged in, users will see a call-to-action button underneath the tagline which redirects to the create page. The first set of 3 posts then follows.
 
 <details><summary><b>Tagline and 1st Set of Posts</b></summary>
 
 ![Features](media/img/features/homepage2.png)
 </details><br />
 
-- Below the second set of 3 posts is a next button which indicates that the page is paginated by 6 posts per page.
+Below the second set of 3 posts is a next button which indicates that the page is paginated by 6 posts per page.
 
-<details><summary><b>2nd Set of Post and Next Button</b></summary>
+<details><summary><b>2nd Set of Posts and Next Button</b></summary>
 
 ![Features](media/img/features/homepage3.png)
 </details><br />
 
-- The footer includes a copyright text and 2 social media icons which when clicked will redirect users to the blog author's Instagram and LinkedIn pages, respectively.
+The footer includes a copyright text and 2 social media icons which when clicked will redirect users to the blog author's Instagram and LinkedIn pages, respectively.
 
 <details><summary><b>Footer</b></summary>
 
 ![Features](media/img/features/homepage4.png)
 </details><br />
 
-### About
+### About Page
 
 The about page informs users of what TravelGramers is about. It describes the significance of traveling and invites users to tell their travel stories. A link to the create page can be found within the last sentence of the page.
 
@@ -213,26 +213,54 @@ The about page informs users of what TravelGramers is about. It describes the si
 ![Features](media/img/features/about.png)
 </details><br />
 
-### Login, Logout, and Signup
+### Login, Logout, and Signup Pages
 
 The purpose of these respective pages is self-explanatory. The description of each layout is as follows:
-- The login page consists of a welcome back message, as well as the username and password fields for users to fill their credentials in. The login button follows just below the fields. A link to the signup page is also visible if users would like to create an account.
-- The logout page only consists of a come back soon message and a logout button.
-- The signup page consists of a join us message at the top. It is followed by a link to the login page in case a user forgets that they already have an account of their own. Underneath it 4 fields are visible: username, optional email, password, and password (again) fields, respectively. The signup button is seen at the bottom.
+
+- The login page consists of a welcome back message, as well as the username and password fields for users to fill their credentials in. The login button follows just below the fields. A link to the signup page is also visible if users haven't actually created an account yet.
 
 <details><summary><b>Login</b></summary>
 
 ![Features](media/img/features/login.png)
 </details><br />
 
+- The logout page only consists of a come back soon message and a logout button.
+
 <details><summary><b>Logout</b></summary>
 
 ![Features](media/img/features/logout.png)
 </details><br />
 
+- The signup page consists of a join us message at the top. It is followed by a link to the login page in case a user forgets that they already have an account of their own. Underneath it 4 fields are visible: username, optional email, password, and password (again) fields, respectively. The signup button is seen at the bottom.
+
 <details><summary><b>Signup</b></summary>
 
 ![Features](media/img/features/signup.png)
+</details><br />
+
+### Create, Update, and Delete Pages
+
+These 3 pages represent the 3 out of 4 basic operations of programming: Create, Update, and Delete. The description of each layout is as follows:
+
+- The create page utilizes Summernote for 2 of the available fields for users to fill out. The page header can be seen at the top of the page, under which the recommended use of a square image is stated. The first field is the title field, which is followed by the django-provided browse button for users to upload an image. Then then afore-mentioned Summernote widgets are displayed in the form of, well, forms. The first form asks user to fill out the description of their travel experience, and the second asks for the main attractions users visited whilst traveling. At the bottom of the page, the submit and cancel buttons can be seen.
+
+<details><summary><b>Create</b></summary>
+
+![Features](media/img/features/create.png)
+</details><br />
+
+- The update page is essentially an exact copy of the create page. Since the theme here is update, the title field and forms will have been pre-filled beforehand when a user created the initial post, as they can not be empty. The page header asks whether there is anything to update and the submit button from the create page is replace with an update button.
+
+<details><summary><b>Update</b></summary>
+
+![Features](media/img/features/update.png)
+</details><br />
+
+- The delete page is self-explanatory. It asks whether the user is sure that they would like to delete the post entirely due to the fact that it can not be undone. The delete and cancel buttons follow underneath.
+
+<details><summary><b>Delete</b></summary>
+
+![Features](media/img/features/delete.png)
 </details><br />
 
 
