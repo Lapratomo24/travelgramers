@@ -114,6 +114,38 @@
             </a>
         </p>
     </footer>
+    <!-- Unsuccessful application of parallax image responsiveness with jquery due to limited knowledge -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            resize_all_parallax();
+        });
+
+        $(window).on('resize', function () {
+            resize_all_parallax();
+        });
+
+        function resize_all_parallax() {
+            var div_id = 'parallax-responsive';
+            var img_w = 1000;
+            var img_h = 1000;
+            resize_parallax(div_id, img_w, img_h);
+        }
+
+        function resize_parallax(div_id, img_w, img_h) {
+            var div = $('#' + div_id);
+            var divwidth = div.width();
+            if (divwidth <= 800) {
+                var pct = (img_h / img_w) * 25;
+            } else {
+                var pct = 40;
+            }
+            var newheight = Math.round(divwidth * (pct / 65));
+            newheight = newheight + 'px';
+            div.height(newheight);
+        }
+    </script> -->
     <script>
         setTimeout(() => {
             let messages = document.getElementById("msg");

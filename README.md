@@ -18,6 +18,39 @@ TravelGramers is a travel blog that is targeted to a specific audience: those wh
 
 ## User Experience
 
+### Agile Methodology
+
+As part of the requirements to start this project, an Agile Methodology was used in order to draft and develop the site. This approach played an important part during the planning phase as I managed to break down the project into smaller tasks.
+
+[Github Projects](https://github.com/users/Lapratomo24/projects/6/views/1) was used to set up a Kanban Board. Please see the attached screenshots below for the completed rundown of the phases.
+
+<details><summary><b>Phase 1</b></summary>
+
+![Agile](media/img/agile_phase1.png)
+</details><br />
+
+<details><summary><b>Phase 2</b></summary>
+
+![Agile](media/img/agile_phase2.png)
+</details><br />
+
+<details><summary><b>Phase 3</b></summary>
+
+![Agile](media/img/agile_phase3.png)
+</details><br />
+
+<details><summary><b>Phase 4</b></summary>
+
+![Agile](media/img/agile_phase4.png)
+</details><br />
+
+<details><summary><b>Phase 5</b></summary>
+
+![Agile](media/img/agile_phase5.png)
+</details><br />
+
+There are 14 issues, or in other words, User Stories that were planned and documented as the project was being developed in order to achieve the desired result. These issues were then further classified as 4 main Epics as follows.
+
 ### User Stories
 
 **Epic - Site Administration**
