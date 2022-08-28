@@ -176,14 +176,14 @@ TravelGramers consists of multiple pages, albeit the structure is quite simple t
 
 The homepage is where users will find a paginated list of blog posts. The posts are preceded by a navigation bar at the top of the screen and followed by a footer section down at the bottom, both of which are visible across all pages.
 
-- The navigation bar consists of a TravelGramers logo on the left and 4 navigation items on the right which include home, about, log in, and sign up. The latter 2 are replaced by create and log out whenever a user logs in with their account. Between the navigation bar and the posts, a hero image is displayed, on top of which a big TravelGramers logo can be seen. 
+- The navigation bar consists of a TravelGramers logo on the left and 4 navigation items on the right which include home, about, log in, and sign up. The latter 2 are replaced by create and log out whenever a user logs in with their account. Between the navigation bar and the posts, a hero image is displayed with an overlay of a big TravelGramers logo. Once logged in, users will see a welcome message which displays their username underneath the logo. 
 
 <details><summary><b>Navbar and Hero Image</b></summary>
 
 ![Features](media/img/features/homepage1.png)
 </details><br />
 
-- Just below the hero image, a tagline that says "Share your unique travel experience" invites users to create a post on the blog. Once logged in, users will see a 'tell your story' button underneath the tagline which redirects to the create page. The first set of 3 posts then follows.
+- Just below the hero image, a tagline that says "Share your unique travel experience" invites users to create a post on the blog. Once logged in, users will see a call-to-action button underneath the tagline which redirects to the create page. The first set of 3 posts then follows.
 
 <details><summary><b>Tagline and 1st Set of Posts</b></summary>
 
@@ -204,9 +204,36 @@ The homepage is where users will find a paginated list of blog posts. The posts 
 ![Features](media/img/features/homepage4.png)
 </details><br />
 
+### About
 
+The about page informs users of what TravelGramers is about. It describes the significance of traveling and invites users to tell their travel stories. A link to the create page can be found within the last sentence of the page.
 
+<details><summary><b>About</b></summary>
 
+![Features](media/img/features/about.png)
+</details><br />
+
+### Login, Logout, and Signup
+
+The purpose of these respective pages is self-explanatory. The description of each layout is as follows:
+- The login page consists of a welcome back message, as well as the username and password fields for users to fill their credentials in. The login button follows just below the fields. A link to the signup page is also visible if users would like to create an account.
+- The logout page only consists of a come back soon message and a logout button.
+- The signup page consists of a join us message at the top. It is followed by a link to the login page in case a user forgets that they already have an account of their own. Underneath it 4 fields are visible: username, optional email, password, and password (again) fields, respectively. The signup button is seen at the bottom.
+
+<details><summary><b>Login</b></summary>
+
+![Features](media/img/features/login.png)
+</details><br />
+
+<details><summary><b>Logout</b></summary>
+
+![Features](media/img/features/logout.png)
+</details><br />
+
+<details><summary><b>Signup</b></summary>
+
+![Features](media/img/features/signup.png)
+</details><br />
 
 
 

@@ -24,8 +24,7 @@
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
         <button class="btn btn-signup" type="submit">{% trans "Log In" %}</button>
-        <a class="button secondaryAction link" style="margin-left: 5px;"
-          href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+        <a style="margin-left: 5px;">{% trans "Forgot Password?" %} Just sign up again ;)</a>
         <p class="mt-3">Or click {% blocktrans %}<a class="link" href="{{ signup_url }}">here</a> to create an account.{% endblocktrans %}</p>
       </form>
     </div>
