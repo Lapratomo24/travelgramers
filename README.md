@@ -81,6 +81,16 @@ There are 14 issues, or in other words, User Stories that were planned and docum
 - As a user, I would like to be able to leave and remove a like so that I can interact with the posts belonging to other users.
 - As a user, I would like to be able to leave a comment (or more) so that I can interact with the posts belonging to other users.
 
+### Data Model
+
+Due to strict time constraints, I decided to develop a blog website which follows the same initial setup as Matt Rudge's Django Blog Tutorial, therefore there are only 2 data models: Post and Comment. The database model is as follows:
+
+![Agile](media/img/database.png)
+
+
+
+
+
 
 
 
