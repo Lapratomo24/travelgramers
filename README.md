@@ -83,13 +83,86 @@ There are 14 issues, or in other words, User Stories that were planned and docum
 
 ### Data Model
 
-Due to strict time constraints, I decided to develop a blog website which follows the same initial setup as Matt Rudge's Django Blog Tutorial, therefore there are only 2 data models: Post and Comment. The database model is as follows:
+Due to strict time constraints, I decided to develop a blog website which follows the same initial setup as Matt Rudge's Django Blog Tutorial, therefore there are only 2 data models: Post and Comment. And for the sake of simplicity, 2 things are adjusted: The status of a new post is automatically set to published, and comments made by users will also be automatically approved and displayed on the comment section. The database model is as follows:
 
-![Agile](media/img/database.png)
+![Database](media/img/database.png)
 
+### Design
 
+As stated previously, this blog website follows the same initial setup as the tutorial. The design of the homepage, as well as subsequent pages, may look similar to the finished website shown in the tutorial, albeit adjusted with my own design. 
 
+**Wireframes**
 
+[Canva](https://www.canva.com/) was used to create the wireframes for TravelGramers. The following are the wireframes for each page on the finished website.
+
+<details><summary><b>Homepage (not logged in)</b></summary>
+
+![Wireframe](media/img/wireframe_home1.png)
+</details><br />
+
+<details><summary><b>Homepage (logged in)</b></summary>
+
+![Wireframe](media/img/wireframe_home2.png)
+</details><br />
+
+<details><summary><b>Create Page</b></summary>
+
+![Wireframe](media/img/wireframe_create.png)
+</details><br />
+
+<details><summary><b>Post Detail Page (not logged in)</b></summary>
+
+![Wireframe](media/img/wireframe_post1.png)
+</details><br />
+
+<details><summary><b>Post Detail Page (logged in)</b></summary>
+
+![Wireframe](media/img/wireframe_post2.png)
+</details><br />
+
+<details><summary><b>Update Page</b></summary>
+
+![Wireframe](media/img/wireframe_update.png)
+</details><br />
+
+<details><summary><b>Delete Page</b></summary>
+
+![Wireframe](media/img/wireframe_delete.png)
+</details><br />
+
+<details><summary><b>About Page</b></summary>
+
+![Wireframe](media/img/wireframe_about.png)
+</details><br />
+
+<details><summary><b>Signup Page</b></summary>
+
+![Wireframe](media/img/wireframe_signup.png)
+</details><br />
+
+<details><summary><b>Login Page</b></summary>
+
+![Wireframe](media/img/wireframe_login.png)
+</details><br />
+
+<details><summary><b>Logout Page</b></summary>
+
+![Wireframe](media/img/wireframe_logout.png)
+</details><br />
+
+**Color Scheme**
+
+The color scheme was derived from [mycolor.space](https://mycolor.space/). I use a predominantly white ash color for the background of the body as well as the navigation bar, blue-ish green for the post tile, buttons, and page headers, as well as blue for the footer.
+
+![Color](media/img/colors.png)
+
+**Font Style**
+
+The main font families used for the design of this project are [Poppins](https://fonts.google.com/specimen/Poppins?query=poppin) and [Abril Fatface](https://fonts.google.com/specimen/Abril+Fatface?query=abril) from Google Fonts.
+
+**Images**
+
+All of the images displayed on the posts, as well as the hero image, belong to me. I am a travel enthusiast myself, hence why I decided to create this travel blog website. I fully guarantee that you will not find the exact same images online.
 
 
 
