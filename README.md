@@ -282,6 +282,16 @@ At the bottom of the page is where the comment section is displayed. To be more 
 
 ## Testing
 
+### Manual Testing
+
+**Site Navigation**
+
+| Feature | Action | Expected Outcome | Result |
+| - | - | - | - |
+| Logo | Click | Redirects to homepage | PASS |
+
+
+
 
 
 **Anything more?**
