@@ -278,7 +278,8 @@ At the bottom of the page is where the comment section is displayed. To be more 
 
 - As the website grows with many different users visiting and publishing their travel stories, it would be nice to add a profile page that displays not only information about the user but also a list of posts that they created.
 - Similarly, a search bar and button would be a nice addition on the navbar so that users can quickly search for a particular post.
-- Add update and delete for comments to complete the CRUD operations on the comment section.
+- Add update and delete functionalities for comments to complete the CRUD operations on the comment section.
+- Add social media sign up and login features.
 
 ## Testing
 
@@ -288,8 +289,7 @@ At the bottom of the page is where the comment section is displayed. To be more 
 
 | Feature | Action | Expected Outcome | Result |
 | - | - | - | - |
-| Homepage | | | |
-| - | - | - | - |
+| Homepage |
 | Not logged in state | | | |
 | Home nav item | Click | Redirects to homepage | PASS |
 | Home nav item | Click | Redirects to homepage | PASS |
@@ -309,6 +309,27 @@ At the bottom of the page is where the comment section is displayed. To be more 
 | Post author | Click | Redirects to post detail page | PASS |
 | Instagram icon | Click | Redirects to instagram website | PASS |
 | LinkedIn icon | Click | Redirects to linkedin website | PASS |
+| About page |
+| Not logged in state | | | |
+| HERE link | Click | Redirects to login page | PASS |
+| Logged in state | | | |
+| HERE link | Click | Redirects to create page | PASS |
+| Signup page |
+| Username field | Empty | Prompts user to fill out | PASS |
+| Password field | Empty | Prompts user to fill out | PASS |
+| Password field | Fewer than 8 chars | Prompts user to provide at least 8 chars | PASS |
+| Email field | Empty | Does not prompt user to fill out as it is optional | PASS |
+| Sign up button | Click | Redirects to homepage | PASS |
+| Login page |
+| Username field | Empty | Prompts user to fill out | PASS |
+| Password field | Empty | Prompts user to fill out | PASS |
+| Remember me checkbox | Unclicked | Does not prompt user to click as it is optional | PASS |
+| Sign up button | Click | Redirects to homepage | PASS |
+| HERE link | Click | Redirects to signup page | PASS |
+| Logout page |
+| Log out button | Click | Redirects to homepage | PASS |
+
+
 
 
 
