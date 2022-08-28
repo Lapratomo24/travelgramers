@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load static %}
+
+<div class="container">
+    <div class="row justify-content-end">
+        <div class="col-md-8 mt-5 offset-md-2">
+            <h2 class="page-title mb-3">404</h2>
+            <p>Page not found.</p>
+        </div>
+    </div>
+    <div class="row justify-content-end">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <form method="POST">
+                {% csrf_token %}
+                <a class="btn btn-signup" href="{%  url 'home' %}">Return to homepage</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

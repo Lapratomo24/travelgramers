@@ -170,7 +170,7 @@ All of the images displayed on the posts, as well as the hero image, belong to m
 
 ## Structure and Features
 
-TravelGramers consists of multiple pages, albeit the structure is quite simple to navigate. Every page is described in detail below which includes the available features.
+TravelGramers consists of multiple pages, albeit the structure is quite simple to navigate. It is also fully responsive across all screen sizes. Every page is described in detail below which includes the available features.
 
 ### Homepage
 
@@ -273,6 +273,14 @@ At the bottom of the page is where the comment section is displayed. To be more 
 
 ![Features](media/img/features/comment.pngpng)
 </details><br />
+
+### Future Features
+
+- As the website grows with many different users visiting and publishing their travel stories, it would be nice to add a profile page that displays not only information about the user but also a list of posts that they created.
+- Similarly, a search bar and button would be a nice addition on the navbar so that users can quickly search for a particular post.
+- Add update and delete for comments to complete the CRUD operations on the comment section.
+
+## Testing
 
 
 
