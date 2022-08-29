@@ -456,7 +456,25 @@ Lighthouse validation was run across all pages of the website in order to check 
 - [Font Awesome](https://fontawesome.com/): Icon library and toolkit.
 - [Firefox DevTools](https://firefox-dev.tools/): A set of tools for inspecting and editing web code, as I prefer to use Firefox instead of Chrome.
 
+## Deployment
 
+For this fourth milestone project, Heroku is used for the deployment of the application as opposed to GitHub.
+
+1. After logging in, click the New button on the top right.
+2. From the dropdown, click Create new app.
+3. Type in a relevant name, choose your region, thne click Create app button.
+5. Go to Resources tab, and type in Postgres under add-ons to select Heroku Postgres.
+6. Go to Settings tab and click Config Vars button, then add the following:
+- CLOUDINARY_URL : cloudinary key,
+- DATABASE_URL : postgres database url,
+- SECRET_KEY = self-explanatory,
+- PORT : 8000,
+- DISABLE_COLLECTSTATIC = 1 (to be removed in final deployment)
+7. Before deployment, make sure to set DEBUG to False.
+8. Then add X_Frame_Options = 'SAMEORIGIN' so the summernote editor can be loaded.
+7. Now go to Deploy tab and choose GitHub as your Deployment method.
+8. Connect to GitHub by clicking the Search button and choosing the correct repository.
+9. You can now choose between Enable Automatic Deploys or manually deploy the application via Deploy Branch. After Heroku finishes building the application, you can click the View button to launch and run your terminal on a new tab.
 
 **Anything more?**
 
