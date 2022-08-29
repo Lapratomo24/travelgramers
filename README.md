@@ -156,7 +156,7 @@ Similary, Canva was also used to create the wireframes for TravelGramers. The fo
 
 ### Color Scheme
 
-The color scheme was derived from [mycolor.space](https://mycolor.space/). I use a predominantly white ash color for the background of the body as well as the navigation bar, blue-ish green for the post title, buttons, and page headers, as well as blue for the footer.
+The color scheme was derived from [ColorSpace](https://mycolor.space/). I use a predominantly white ash color for the background of the body as well as the navigation bar, blue-ish green for the post title, buttons, and page headers, as well as blue for the footer.
 
 ![Color](media/img/colors.png)
 
@@ -420,8 +420,41 @@ Lighthouse validation was run across all pages of the website in order to check 
 
 - The hero image implements a parallax effect on the homepage. The parallax itself is responsive, while the image depicting Florence, Italy is not. I tried googling the solution and found this [site](https://inkplant.com/code/responsive-parallax-images). As instructed, I tried implementing some JQuery code and tinkered with the code for a long while. Due to my limited knowledge, I am still not able to implement proper responsiveness to the image. What I did in the end was edit the image in a such a way that it gives off the impression of being responsiive. The JQuery is still visible on base.html while being commented out.
 
-- The positioning of both the header and image on the post detail page was quite frustrating to fix due to my limited knowledge in bootstrap column and grid systems. The initial setup as how it looks on the Django Blog Tutorial was not the best when using square images, so I decided to tinker with it until I managed to produce the final layout. 
+- The positioning of both the header and image on the post detail page was quite frustrating to fix due to my limited knowledge on bootstrap column and grid systems. The initial setup as how it looks on the Django Blog Tutorial was not the best when using square images, so I decided to tinker with it until I managed to produce the final layout. 
 
+## Technologies
+
+### Languages
+
+- Python
+- HTML
+- CSS
+- JavaScript
+
+### Frameworks, modules, libraries
+
+- [Django](https://www.djangoproject.com/): Python web framework that encourages rapid development for this project.
+- [Django-allauth](https://django-allauth.readthedocs.io/en/latest/installation.html): Authentication library.
+- [Bootstrap5](https://getbootstrap.com/docs/5.2/getting-started/introduction/): The most popular HTML, CSS, and JavaScript framework for creating responsive, mobile-first websites.
+- [os](https://docs.python.org/3/library/os.html): Module that provides a portable way of operating system dependent functionality.
+- [dj-database-url](https://pypi.org/project/dj-database-url/): Allows the use of DATABASE_URL environment variable to configure Django application.
+- [Summernote](https://summernote.org/): JavaScript library that helps create WYSIWYG editors online.
+- [Crispy](https://django-crispy-forms.readthedocs.io/en/latest/): Application that helps to manage Django forms.
+- [Gunicorn](https://gunicorn.org/): Python WSGI HTTP Server.
+- [psycopg2](https://pypi.org/project/psycopg2/): PostgreSQL database adapter for Python.
+
+### Programs
+
+- [PostgreSQL](https://www.postgresql.org/): Open source object-relational database system.
+- [Heroku](https://www.heroku.com/): Cloud platform used for the project deployment that lets companies build, deliver, monitor and scale apps.
+- [GitHub](https://github.com/): Code hosting platform for version control and collaboration.
+- [Gitpod](https://www.gitpod.io/): An IDE to create and develop this project.
+- [Cloudinary](https://cloudinary.com): End-to-end image and video hosting solution for websites and mobile apps.
+- [Canva](https://www.canva.com/): Online graphic design tool to create wireframes, logo, and edit all my travel images/photos.
+- [Google Fonts](https://fonts.google.com/): Font generator.
+- [ColorSpace](https://mycolor.space/): Color palette generator.
+- [Font Awesome](https://fontawesome.com/): Icon library and toolkit.
+- [Firefox DevTools](https://firefox-dev.tools/): A set of tools for inspecting and editing web code, as I prefer to use Firefox instead of Chrome.
 
 
 
