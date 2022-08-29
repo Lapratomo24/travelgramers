@@ -455,6 +455,7 @@ Lighthouse validation was run across all pages of the website in order to check 
 - [ColorSpace](https://mycolor.space/): Color palette generator.
 - [Font Awesome](https://fontawesome.com/): Icon library and toolkit.
 - [Firefox DevTools](https://firefox-dev.tools/): A set of tools for inspecting and editing web code, as I prefer to use Firefox instead of Chrome.
+- [Unsplash](https://unsplash.com/s/photos/travel?orientation=squarish): For the placeholder image.
 
 ## Deployment
 
@@ -476,10 +477,47 @@ For this fourth milestone project, Heroku is used for the deployment of the appl
 8. Connect to GitHub by clicking the Search button and choosing the correct repository.
 9. You can now choose between Enable Automatic Deploys or manually deploy the application via Deploy Branch. After Heroku finishes building the application, you can click the View button to launch and run your terminal on a new tab.
 
-**Anything more?**
+**GitHub**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+Forking the Repository
+
+- Locate the repository.
+- Locate the 'Fork' button on the right side of the page. Clicking the button results in the creation of a copy of the repository.
+- The copy is now found in your GitHub account.
+
+Cloning the Repository
+
+- Locate the repository.
+- Click the 'Code' button to the left of the green 'Gitpod' button.
+- Copy the link under HTTPS by clicking the clipboard icon.
+- Open Git Bash.
+- Change the current working directory to the location where you want the cloned directory to be made.
+- Type git clone and then paste the copied link form GitHub.
+- Pressing 'Enter' will result in the creation of the local clone.
+
+## Credits
+
+### Code
+
+- [Django Views](https://docs.djangoproject.com/en/4.1/topics/http/views/)
+- [Breaking long lines](https://doingmathwithpython.github.io/breaking-long-lines-in-python.html)
+- [CSS Box Shadow](https://getcssscan.com/css-box-shadow-examples)
+- [Glow effect for social media icons](https://codepen.io/dig-lopes/pen/WLVGda)
+- [Best font pairings](https://heyreliable.com/ultimate-google-font-pairings/)
+- [Shadow effect for welcome message](https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/)
+- [Responsive parallax tutorial](https://inkplant.com/code/responsive-parallax-images)
+- [Summernote config](https://github.com/summernote/django-summernote#options)
+- [Use of block title](https://zappycode.com/tutorials/default-and-specific-titles-using-django-blocks)
+- [Travel blog for layout and content reference](https://artoftravel.tips/)
+
+### Acknowledgements
+
+I can't stress this enough but I am really grateful for Matt Rudge's Django Blog Tutorial as otherwise I would have been lost in this project due to my limited knowledge (still even now) in django as well as strict time constraints as I spent a month back in my home country Indonesia and 'sacrifice' much of my time to study to spend quality vacation time with family and friends.
+
+And of course, this would also not have been possible if not for the guidance, instructions, and recommendations I received from my mentor [Akshat Garg](https://www.linkedin.com/in/akshatnitd/).
+
+And lastly, I am grateful to the Slack Community for the helpful solutions provided whenever I was stuck.
 
 ---
 
-Happy coding!
+Looking forward to my specialization module and project with React!
