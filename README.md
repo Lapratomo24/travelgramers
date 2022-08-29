@@ -10,6 +10,8 @@ The creation of this blog is intended to showcase a Full-Stack web application i
 
 [Visit TravelGramers Blog](https://travelgramers-blog.herokuapp.com/)
 
+![TravelGramers](media/img/amiresponsive.png)
+
 ## Table of Content
 
 ## Objective
@@ -456,6 +458,7 @@ Lighthouse validation was run across all pages of the website in order to check 
 - [Font Awesome](https://fontawesome.com/): Icon library and toolkit.
 - [Firefox DevTools](https://firefox-dev.tools/): A set of tools for inspecting and editing web code, as I prefer to use Firefox instead of Chrome.
 - [Unsplash](https://unsplash.com/s/photos/travel?orientation=squarish): For the placeholder image.
+- [AmIResponsive](https://ui.dev/amiresponsive): To check for site responsiveness across various devices.
 
 ## Deployment
 
@@ -479,13 +482,13 @@ For this fourth milestone project, Heroku is used for the deployment of the appl
 
 **GitHub**
 
-Forking the Repository
+Forking the Repository:
 
 - Locate the repository.
 - Locate the 'Fork' button on the right side of the page. Clicking the button results in the creation of a copy of the repository.
 - The copy is now found in your GitHub account.
 
-Cloning the Repository
+Cloning the Repository:
 
 - Locate the repository.
 - Click the 'Code' button to the left of the green 'Gitpod' button.
