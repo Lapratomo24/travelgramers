@@ -1,3 +1,5 @@
+/** Main styling across pages **/
+
 body {
     background-color: #F9FAFC;
     font-family: 'Poppins', sans-serif;
@@ -22,6 +24,26 @@ body {
 .main-bg {
     background-color: hsl(24, 26%, 96%);
 }
+
+.main-text {
+    padding: 200px 0 200px 0;
+}
+
+.subtitle {
+    font-family: 'Abril Fatface', cursive;
+    color: #23BBBB;
+    padding: 40px 0 20px 0;
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.form-title label,
+.form-title {
+    color: #23BBBB;
+    margin: 10px 0 2px 0;
+}
+
+/** Style post content **/
 
 .card {
     border: none;
@@ -56,6 +78,8 @@ body {
     margin-top: 20px;
 }
 
+/** Style text content **/
+
 .masthead-text {
     background-color: #006ccd;
     color: white;
@@ -84,6 +108,8 @@ body {
     margin-left: 5%;
     color: lightgray;
 }
+
+/** Style buttons and links **/
 
 .btn-signup {
     border: 1px solid #23BBBB;
@@ -124,9 +150,7 @@ body {
     border: none;
 }
 
-footer p a i:hover {
-    box-shadow: 0 0 10px white;
-}
+/** Style navigation bar and footer **/
 
 .navbar-nav.ms-auto.mb-2.mb-lg-0 li a {
     color: #006ccd;
@@ -141,6 +165,12 @@ a.nav-link.active {
     color: #0088ff;
 }
 
+footer p a i:hover {
+    box-shadow: 0 0 10px white;
+}
+
+/** Style hero image section **/
+
 .parallax-header {
     background: #000;
     background: linear-gradient(rgba(0, 0, 0, 0.5),
@@ -149,10 +179,6 @@ a.nav-link.active {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.main-text {
-    padding: 200px 0 200px 0;
 }
 
 .welcome-message {
@@ -172,19 +198,7 @@ a.nav-link.active {
         calc(var(--x-offset) - var(--stroke)) calc(var(--y-offset) + var(--stroke)) 0px var(--stroke-color);
 }
 
-.subtitle {
-    font-family: 'Abril Fatface', cursive;
-    color: #23BBBB;
-    padding: 40px 0 20px 0;
-    font-weight: 900;
-    font-size: 2em;
-}
-
-.form-title label,
-.form-title {
-    color: #23BBBB;
-    margin: 10px 0 2px 0;
-}
+/** Add responsivity to some elements **/
 
 @media screen and (max-width: 800px) {
     .minimize-tagline {
